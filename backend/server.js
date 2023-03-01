@@ -12,8 +12,8 @@ const port = process.env.PORT || 9001;
 
 const pusher = new Pusher({
     appId: "1554489",
-    key: "4637347ccdca3ff5fdf5",
-    secret: "a2fb79a007fe59eb8068",
+    key: "******",
+    secret: "********",
     cluster: "eu",
     useTLS: true
 });
@@ -24,7 +24,7 @@ app.use(express.json());
 app.use(cors())
 
 // DB config
-const connection_url = 'mongodb+srv://justMe:H36SjDwrHMzQrwpH@cluster0.gmgez9s.mongodb.net/?retryWrites=true&w=majority';
+const connection_url = 'mongodb+srv://justMe:********@cluster0.gmgez9s.mongodb.net/?retryWrites=true&w=majority';
 
 mongoose.connect(connection_url, {
     useUnifiedTopology: true 
